@@ -1,0 +1,12 @@
+model: ss96
+dataset: CIFAR10
+
+optim:
+  lr: 0.01
+  weight_decay: 0.001
+  n_epochs: 1800
+
+label_smooth:
+  epsilon: 0.5
+
+rb_decay: 0.99

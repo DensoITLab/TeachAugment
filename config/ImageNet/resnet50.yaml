@@ -1,0 +1,13 @@
+model: resnet50
+dataset: ImageNet
+
+optim:
+  lr: 0.05
+  weight_decay: 0.0001
+  n_epochs: 270
+
+label_smooth:
+  epsilon: 0.1
+
+replay_buffer:
+  sampling_freq: 1
