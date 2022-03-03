@@ -1,4 +1,4 @@
-# TeachAugment
+# TeachAugment: Data Augmentation Optimization Using Teacher Knowledge (CVPR2022)
 Official Implementation of TeachAugment in PyTorch.  
 arXiv: https://arxiv.org/abs/2202.12513
 
@@ -7,14 +7,15 @@ arXiv: https://arxiv.org/abs/2202.12513
 - Torchvision >= 0.10
 
 ## Run
-Single GPU training
+Training with single GPU
 ```
 python main.py --yaml ./config/$DATASET_NAME/$MODEL
 ```
 
-Single node multi-GPU training
+Training with single node multi-GPU
 ```
-python -m torch.distributed.launch --nproc_per_node=$N_GPUS main.py --yaml ./config/$DATASET_NAME/$MODEL --dist
+python -m torch.distributed.launch --nproc_per_node=$N_GPUS main.py \
+    --yaml ./config/$DATASET_NAME/$MODEL --dist
 ```
 
 Examples
@@ -22,7 +23,8 @@ Examples
 # Training WRN-28-10 on CIFAR-100
 python main.py --yaml ./config/CIFAR100/wrn-28-10.yaml
 # Training ResNet-50 on ImageNet with 4 GPUs
-python -m torch.distributed.launch --nproc_per_node=4 main.py --yaml ./config/ImageNet/resnet50.yaml --dist
+python -m torch.distributed.launch --nproc_per_node=4 main.py \
+    --yaml ./config/ImageNet/resnet50.yaml --dist
 ```
 If the computational resources are limited, please try `--save_memory` option.
 
