@@ -1,4 +1,4 @@
-# TeachAugment: Data Augmentation Optimization Using Teacher Knowledge (CVPR2022)
+# TeachAugment: Data Augmentation Optimization Using Teacher Knowledge (CVPR2022, Oral presentation)
 Official Implementation of TeachAugment in PyTorch.  
 arXiv: https://arxiv.org/abs/2202.12513
 
