@@ -1,4 +1,4 @@
-# TeachAugment: Data Augmentation Optimization Using Teacher Knowledge (CVPR2022, Oral presentation)
+# TeachAugment: Data Augmentation Optimization Using Teacher Knowledge (CVPR2022, Oral)
 Official Implementation of TeachAugment in PyTorch.  
 arXiv: https://arxiv.org/abs/2202.12513
 
@@ -32,11 +32,13 @@ If the computational resources are limited, please try `--save_memory` option.
 ## Citation
 If you find our project useful in your research, please cite it as follows:
 ```
-@article{suzuki2022TeachAugment
-    title={TeachAugment: Data Augmentation Optimization Using Teacher Knowledge},
-    author={Suzuki, Teppei},
-    journal={arXiv preprint arXiv:2202.12513},
-    year={2022},
+@InProceedings{Suzuki_2022_CVPR,
+    author    = {Suzuki, Teppei},
+    title     = {TeachAugment: Data Augmentation Optimization Using Teacher Knowledge},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {10904-10914}
 }
 ```
 
